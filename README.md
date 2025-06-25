@@ -57,3 +57,10 @@ This analysis identifies the optimal first-order discount level to maximize GMV 
 
 **Recommendation:** Implement a 10% discount for first orders. Avoid larger discounts.
 
+---
+
+## 📎 Data Source
+
+- [Food Delivery Order History Dataset (Kaggle)](https://www.kaggle.com/datasets/sujalsuthar/food-delivery-order-history-data)
+
+

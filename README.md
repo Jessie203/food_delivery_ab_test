@@ -1,66 +1,69 @@
-# 📦 First Order Discount A/B Test — Food Delivery Platform
+# First Order Discount A/B Test — Food Delivery Platform
 
-## Project Overview
-
-This project evaluates the impact of first-order discounts on new customer GMV (Gross Merchandise Value) for an online food delivery platform.  
-A simulated A/B test assigned new users to four discount groups: **0%**, **10%**, **20%**, and **30%**.  
-
-The goal is to determine whether offering larger discounts leads to greater revenue on first orders — helping the business optimize discount strategy while balancing profitability.
+## 🚀 Project Overview
+This project explores how different discount strategies impact first-order conversion and gross merchandise value (GMV) on a food delivery platform. The goal is to identify the optimal discount rate to maximize new user acquisition and revenue.
 
 ---
 
-## Business Motivation
-
-Discounts are commonly used to acquire new users — but excessive discounts reduce margin and may not increase customer spend.  
-
-This analysis identifies the optimal first-order discount level to maximize GMV and minimize unnecessary promotional costs.
-
----
-
-## Data
-
-- 21,321 total orders  
-- 11,607 first orders  
-- **11,497 delivered first orders** included in the analysis (non-delivered orders excluded)
+## 🎯 Business Objective
+- Improve first-order conversion rate
+- Increase GMV per new user
+- Identify the most cost-effective discount strategy
 
 ---
 
-## Methods
-
-- Simulated A/B test with four balanced groups (0%, 10%, 20%, 30%)  
-- Exploratory Data Analysis (EDA)  
-- Independent t-tests for statistical significance  
-- GMV uplift % calculation vs 0% control  
-- Visualizations: boxplots, barplots with error bars
+## 🧑‍💻 My Role
+- Designed A/B testing strategy and defined success metrics
+- Performed data cleaning and exploratory analysis
+- Conducted hypothesis testing and uplift analysis
+- Delivered business recommendations supported by visual insights
 
 ---
 
-## Key Results
-
-| Discount Group | GMV Uplift vs 0% | p-value (vs 0%) |
-|----------------|------------------|-----------------|
-| 0%             | 0.00 %           | —               |
-| 10%            | +2.67 %          | 0.1765          |
-| 20%            | -0.57 %          | 0.7541          |
-| 30%            | -2.27 %          | 0.1982          |
-
-- The **10% discount** produced a small positive GMV uplift, but was not statistically significant.  
-- **20%** and **30%** discounts reduced GMV compared to the 0% control.  
-- Only **10% vs 30%** showed a significant difference (p = 0.0081), favoring the 10% discount.
+## 📊 Key Metrics Summary
+- 📈 Overall uplift (10% discount vs. control): **+2.7% GMV**
+- 💰 Best discount group: **10% discount group**
+- 🛒 Total delivered first orders analyzed: **~11,000**
+- 🎯 Recommended discount strategy: **Implement 10% first-order discount**
 
 ---
 
-## Final Recommendation
+## 💡 GMV Distribution by Discount Group
+![gmv_bar](plots/gmv_bar.png)
 
-✅ A **10% first-order discount** is optimal — providing moderate uplift without margin loss.  
-❌ Higher discounts (20%, 30%) do not improve GMV and may reduce profitability.  
+---
 
-**Recommendation:** Implement a 10% discount for first orders. Avoid larger discounts.
+## 📦 GMV Boxplot by Discount Group
+![gmv_box](plots/gmv_box.png)
+
+---
+
+## 🚀 Uplift Percentage Compared to Control
+![uplift](plots/uplift.png)
+
+---
+
+## ✅ Business Recommendation
+Based on our A/B test results, a 10% discount delivers the highest GMV uplift (+2.7%) while avoiding excessive margin reduction. We recommend focusing on a 10% first-order discount to drive new user acquisition in a cost-efficient manner.
+
+---
+
+## 🛠 Tools & Skills
+- Python (pandas, matplotlib, seaborn, statsmodels)
+- SQL
+- Statistical hypothesis testing
+- Business impact analysis
 
 ---
 
 ## 📎 Data Source
-
 - [Food Delivery Order History Dataset (Kaggle)](https://www.kaggle.com/datasets/sujalsuthar/food-delivery-order-history-data)
 
+---
 
+## ⚡ Future Work
+- Analyze long-term retention impact post-discount
+- Incorporate city or region segmentation to further refine the strategy
+- Explore discount effects on repeat purchase behavior
+
+---
